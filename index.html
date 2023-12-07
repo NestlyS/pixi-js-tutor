@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Pixi.js доклад</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" >
+  </head>
+  <body>
+    <div class="root">
+      <h1 class="header">
+        <span class="logo"><span>PIXI</span>.<span>JS</span></span>
+        <nav class="navigation">
+          <button onclick="onClassChangeClick('first')">Инициализация</button>
+          <button onclick="onClassChangeClick('second')">Добавление</button>
+          <button onclick="onClassChangeClick('third')">Перемещение</button>
+          <button onclick="onClassChangeClick('fourth')">Примитивы</button>
+          <button onclick="onClassChangeClick('fifth')">???</button>
+        </nav>
+      </h1>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+      <script src="./screen-hello.js" type="module"></script>
+      <script src="./screen-first-app.js" type="module"></script>
+      <script src="./screen-add-sprites.js" type="module"></script>
+      <script src="./screen-move-sprites.js" type="module"></script>
+      <script src="./screen-primitives.js" type="module"></script>
+      <script src="./screen-bonus.js" type="module"></script>
+
+      <div id="examples">
+        <div id="screen-first-app">
+        </div>
+        <div id="screen-add-sprites">
+        </div>
+        <div id="screen-move-sprites">
+        </div>
+        <div id="screen-primitives">
+        </div>
+        <div id="screen-bonus">
+        </div>
+      </div>
+
+      <script src="./main.js"></script>
+    </div>
+  </body>
+</html>

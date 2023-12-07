@@ -1,0 +1,131 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+}
+
+body {
+  font-family: Manrope !important;
+}
+
+.root {
+  width: 100%;
+  min-height: 100%;
+  background: #232323;
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0 15px;
+  box-shadow: 1px 1px 16px 2px black;
+}
+
+.logo {
+  margin-right: auto;
+  padding: 15px;
+}
+
+.logo * {
+  filter: drop-shadow(0px 0px 1px white) drop-shadow(0px 0px 10px gray);
+}
+
+.logo *:first-child {
+  color: rgb(0, 162, 220);
+}
+
+.logo *:last-child {
+  color: rgb(221, 15, 100);
+}
+
+.navigation {
+  display: flex;
+  width: 70%;
+  margin-right: 15px;
+}
+
+.navigation * {
+  flex-basis: 25%;
+  border: none;
+  background: #80093a;
+  color: white;
+  font-family: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  filter: drop-shadow(5px 0px 8px #232323);
+  transition: all 0.3s;
+}
+
+body.first .navigation *:nth-child(1){
+  background: #e01067;
+}
+
+body.second .navigation *:nth-child(2){
+  background: #e01067;
+}
+
+body.third .navigation *:nth-child(3){
+  background: #e01067;
+}
+
+body.fourth .navigation *:nth-child(4){
+  background: #e01067;
+}
+
+.navigation *:hover {
+  background: #005675;
+}
+
+.navigation *:active {
+  background: #003142;
+}
+
+#examples {
+  position: relative;
+  width: 80%;
+  margin: 40px auto;
+}
+
+#examples > * {
+  position: absolute;
+  display: flex;
+  top: 50px;
+  flex-direction: column;
+  height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0%;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s;
+}
+
+body.first #examples > *:nth-child(1) {
+  opacity: 100%;
+}
+
+body.second #examples > *:nth-child(2) {
+  opacity: 100%;
+}
+
+body.third #examples > *:nth-child(3) {
+  opacity: 100%;
+}
+
+body.fourth #examples > *:nth-child(4) {
+  opacity: 100%;
+}
+
+body.fifth #examples > *:nth-child(5) {
+  opacity: 100%;
+}
